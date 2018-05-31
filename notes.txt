@@ -1,0 +1,27 @@
+
+Sun, Planning to be Surprised: Optimal Bayesian Exploration in Dynamic Environments
+ - Formalizes an optimal framework of exploration based on surprise (i.e. information gain)
+ - The information gain is given by the KL divergence between the (learned/modelled) distributions over environment parameters, with two different histories (one a subset of the other)
+ - One can then use the expected information gain over future (potential) histories to define the tau-step curiosity Q-value q_pi^tau(h,a), analogous to the classical Q-value, which measures the expected information gain from performing a, and then following pi for tau-1 steps, starting from history h
+ - The curiosity value of a history can be computed from the curosity Q-value, analogous to the classical value function
+ - The point of greatest significance is that the agent considers future curiosity in its current decision (i.e. not in a greedy fashion)
+ - Furthermore, this is not quite the same as simply treating information gain as a reward: they are additive only in expectation (meaning one should *not* simply treat them as rewards and sum them after having obtained them). This is because in expectation they collapse to a single well-defined KL, whereas taken alone as observed rewards, the two KLs are between different distributions (essentially making them in different units) (?). Furthermore, although each information gain is non-negative, it is possible for the cumulative information gain (i.e. between the current history and the prior) to be non-monotonically changing (which cannot happen in classical RL with non-negative rewards)
+
+Kulkarni, Hierarchical Deep RL: Integrating Temporal Abstraction and Intrinsic Motivation
+
+Fortunato, Noisy Networks for Exploration
+
+Pathak, Curiosity-Driven Exploration by Self-Supervised Prediction
+
+Still, An Information-Theoretic Approach to Curiosity-Driven RL
+
+Lopes, Exploration in Model-based RL by Empirically Estimating Learning Progress
+
+Mohamed, Variational Information Maximization for Intrinsically Motivated RL
+
+Houthooft, VIME: Varitational Information Maximizing Exploration
+
+Bellemare, Unifying Count-based Exploration and Intrinsic Motivation
+
+
+
