@@ -25,3 +25,24 @@ Bellemare, Unifying Count-based Exploration and Intrinsic Motivation
 
 
 
+------------------------------------------------
+
+Useful potential elements of a World Simulator
+
+o Forward model
+ - Approximate information gain with a Bayesian model of uncertainty
+ - Operate on a latent representation
+ - Does dropout or concrete dropout converge? Maybe a different SRT?
+o Inverse model
+ - Regularize what is important for the forward model
+o Discriminator
+ - Ensure that the world model is realistic
+
+
+
+
+
+
+
+
+
